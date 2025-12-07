@@ -1,4 +1,4 @@
-# ☀️ Daily Solar Power Forecasting using Machine Learning
+# Daily Solar Power Forecasting using Machine Learning
 
 ## Project Overview
 
@@ -16,7 +16,7 @@ This work was developed as the final Student Choice Module for **ATMS 523: Weath
 
 ***
 
-## 📊 Data Sources
+## Data Sources
 
 The project leverages two primary open data repositories:
 
@@ -29,7 +29,7 @@ Both hourly datasets were resampled to daily means and carefully aligned on a ti
 
 ***
 
-## 🔬 Methodology & Results
+## Methodology & Results
 
 The analysis is performed within the provided **`Project_Code.ipynb`** Jupyter notebook.
 
@@ -50,7 +50,7 @@ The final models were validated using a **true time-series split** (80% training
 
 ***
 
-## 🚀 Running the Code
+## Running the Code
 
 ### Requirements
 
@@ -58,7 +58,7 @@ This project requires Python 3.8+ and the following libraries. Install them usin
 
 ```bash
 pip install pandas s3fs numpy scikit-learn matplotlib xgboost shap
-
+```
 ### Execution Steps
 
 1.  **Clone the Repository** (if applicable):
