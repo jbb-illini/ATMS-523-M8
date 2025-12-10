@@ -22,8 +22,10 @@ The project leverages two primary open data repositories:
 
 | Dataset | Type | Source Access Method | Key Variables Used |
 | :--- | :--- | :--- | :--- |
-| **PVDAQ Data** (System ID 11487) | Historical PV Power | AWS S3 via `s3fs` | `Total_kWh`, `Power_Mean` |
-| **NREL NSRDB** | Meteorological Data | NREL API Client | GHI, Clearsky GHI, Temperature, Wind Speed, Cloud Type |
+| **PVDAQ Data** (System ID 11487) | Historical PV Power | AWS S3 via `s3fs` | `Total_kWh`, `Power_Mean` | URL/DOI: https://doi.org/10.25984/1846021 |
+| **NREL NSRDB** | Meteorological Data | NREL API Client | GHI, Clearsky GHI, Temperature, Wind Speed, Cloud Type | URL/DOI: https://doi.org/10.25984/1810289 |
+
+
 
 Both hourly datasets were resampled to daily means and carefully aligned on a timestamp index to create the final unified feature set.
 
@@ -74,4 +76,3 @@ pip install pandas s3fs numpy scikit-learn matplotlib xgboost shap
 
 3.  **Run the Notebook:**
     * Execute all cells in the **`Project_Code.ipynb`** file sequentially. The notebook handles all steps from data acquisition and cleaning through model training, evaluation, and visualization.
-
